@@ -7,9 +7,28 @@
   </head>
   <body>
     <div id="root">
-      <h1>¡Hola mundo!</h1>
-    <p>Mensaje de prueba (?)</p>
+        <div id="welcome">
+      <h1>¡Hola, bienvenida/o al portal de Becas UNAM!</h1>
+    <p>Aquí encontrarás información sobre las becas para movilidad académica y estudiantil</p>
+    <p>Revisa los términos y condiciones y no dudes en registrarte para solicitar tu beca</p>
+    <button id="terminos">Términos y condiciones</button>
+    <button id="registro">Registro</button>
     </div>
+
+    <!--Términos y condiciones-->
+    <div id="condiciones" class='hideElement'>
+      <h3>Texto de términos y condiciones para solicitar beca</h3>
+      <button id="botonInicio">Regresar</button>
+      </div>
+    
+      <!--Iniciar registro-->
+    <div id="registro" class='hideElement'>
+          <h1>Ingresa tus datos</h1>
+          <p>FUNCIONES PARA RECOLECTAR INFORMACIÓN DE USUARIO</p>
+          <button id="regresar">Regresar</button>
+          <button id="terminar">Finalizar</button>
+          
+          <br>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
