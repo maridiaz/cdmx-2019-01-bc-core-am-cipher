@@ -1,0 +1,5 @@
+window.cipher = {
+  // ... 
+};
+enconde: () => {},
+decode: () => {}
