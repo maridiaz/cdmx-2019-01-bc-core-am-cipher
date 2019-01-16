@@ -1,100 +1,69 @@
 describe('cipher', () => {
 
-- let +const,
-- Arrow functions,
+  it('debería ser un objeto', () => {
+    assert.equal(typeof cipher, 'object');
+  });
 
-```
-function suma(a, b){
-  return a+b;
-}
+  describe('cipher.encode', () => {
 
-var suma = function (a, b){
-  return a+b;
-};
+    it('debería ser una función', () => {
+      assert.equal(typeof cipher.encode, 'function');
+    });
+    
+    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33',() =>{
+      assert.equal(cipher.encode(33,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"),"HIJKLMNOPQRSTUVWXYZABCDEFG" );
+   });
+      // Hacker edition
+    //
+    // Si decides implementar soporte para caracteres no alfabéticos descomenta
+    // el test a continuación.
+    //
+    // it('debería retornar " !@" para " !@"', () => {
+    //   assert.equal(cipher.encode(33, ' !@'),' !@');
+    // });
 
-const suma = (a, b) => a+b;
+    //
+    // Hacker edition
+    //
+    // Si decides implementar soporte para caracteres no alfabéticos descomenta
+    // el test a continuación.
+    //
+    // it('debería retornar " !@" para " !@"', () => {
+    //   assert.equal(cipher.encode(33, ' !@'),' !@');
+    // });
+  });
 
-```
+  describe('cipher.decode', () => {
 
-- interpolacion de variables,
+    it('debería ser una función', () => {
+      assert.equal(typeof cipher.decode, 'function');
+    });
 
-* template strings,
+    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33',() =>{
+      assert.equal(cipher.decode(33,"HIJKLMNOPQRSTUVWXYZABCDEFG"),"ABCDEFGHIJKLMNOPQRSTUVWXYZ" );
+   });
+    //
+    // Hacker edition
+    //
+    // Si decides agregar soporte para minúsculas descomenta el test a
+    // continuación.
+    //
+    // it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
+    //   assert.equal(
+    //     cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg'),
+    //     'abcdefghijklmnopqrstuvwxyz'
+    //   );
+    // });
 
-```
-const str = "hola";
-const str2 = 'hola';
-const extra = 'extra';
-const str3 = `jejejejex${extra}`;
+    //
+    // Hacker edition
+    //
+    // Si decides implementar soporte para caracteres no alfabéticos descomenta
+    // el test a continuación.
+    //
+    // it('debería retornar " !@" para " !@"', () => {
+    //   assert.equal(cipher.decode(33, ' !@'),' !@');
+    // });
+  });
 
-var stra = "jejejejejex"+extra;
-```
-
-- for of,
-
-```
-var arreglo = ['michi', 'bonita', 'sherezade', 'cheshire'];
-for(i = 0; i<arreglo.length; i++){
-  console.log("gatito "+arreglo[i]);
-}
-
-const arreglo = ['michi', 'bonita', 'sherezade', 'cheshire'];
-
-for(const nombre of arreglo){
-  console.log(`gatito ${nombre}`);
-}
-
-```
-
-- for in ,
-
-```
-const gato = {
-  color: 'calico',
-  sexo: 'hembra',
-  nombre: 'michi',
-  edad: '5',
-  maullar: ()=>console.log('miau'),
-  };
-
-
-console.log(`Este es un gato: sexo ${gato.sexo} color  ${gato.color}`);
-
-for(const propiedad in gato) {
-  console.log(`${propiedad} es ${gato[propiedad]}`);
-  if(typeof gato[propiedad] == 'function') gato[propiedad]();
-}
-
-```
-
-- .forEach,
-
-```
-var arreglo = ['michi', 'bonita', 'sherezade', 'cheshire'];
-arreglo.forEach((elemento, index)=> {
- console.log(elemento);
-})
-```
-
-- .map,
-
-```
-var arreglo = ['michi', 'bonita', 'sherezade', 'cheshire'];
-const mapeado = arreglo.map((elemento, index)=> {
- console.log(elemento);
- return `hola ${elemento}`;
 });
-```
-
-- .filter,
-
-```
-var arreglo = ['michi', 'bonita', 'sherezade', 'cheshire'];
-const filtrado = arreglo.filtrado((elemento, index)=> {
-  if(element === 'michi') {
-    return true;
-  };
-  return false;
-});
-```
-
-- etc...
