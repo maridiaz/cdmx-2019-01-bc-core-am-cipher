@@ -1,7 +1,12 @@
 window.cipher = {
   // ... 
-};
-enconde: () => {,
-decode: () => 
+
+encode: () => {
+
+},
+
+decode: () => {
+
 }
 
+//const algo = () => {} usar terminal para ver qué códigos no se están usando
