@@ -91,7 +91,7 @@ const listaDos = document.getElementById('descifrado2');
 botonCifrar.addEventListener('click',()=>{
   let offset = parseInt(listaUno.value);
   let string = inputEncode.value;
-  document.getElementById('message1').innerHTML=window.cipher.encode(string, offset);
+  document.getElementById('message1').innerHTML=window.cipher.encode(offset, string);
 
 })
 
@@ -99,7 +99,7 @@ botonCifrar.addEventListener('click',()=>{
 botonDescifrar.addEventListener('click',()=>{
   let offset = parseInt(listaDos.value);
   let string = inputDecode.value;
-  document.getElementById('message2').innerHTML=window.cipher.decode(string, offset);
+  document.getElementById('message2').innerHTML=window.cipher.decode(offset, string);
 
 })
     
