@@ -1,13 +1,13 @@
 window.cipher = {
   // ... 
 
-  encode: () => {
-
+  encode: (mssg1, offset) => {
+    // aqui hace la fórmula del desplazamiento 
+    return mssg1
   },
 
-  decode: () => {
+  decode: (mssg2, num) => {
 
-
-  }
+  return mssg2
+  },
 }
-//const algo = () => {} usar terminal para ver qué códigos no se están usan
