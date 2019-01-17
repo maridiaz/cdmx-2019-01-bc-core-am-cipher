@@ -1,8 +1,29 @@
-body{background:#E9E511 }
-body{border:4px #260CC3}
+body{background: #FFFFFF}
+body{border:2px #00008B}
 body{text-align:center}
 body{padding: 2em}
-
 .hideElement {
     display:none;
 }
+
+#welcome #first {
+    background-color:#4169E1    ;
+}
+h1 {
+    color: white
+}
+#second {
+    background-color:#4169E1    ;
+}
+h2 {
+    color: white
+}
+#third {
+    background-color:#4169E1    ;
+}
+h2 {
+    color: white
+}
+
+#lista {text-align: left}
+#datos {align: left}

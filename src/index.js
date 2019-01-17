@@ -3,60 +3,81 @@
 //remove(hideElement) quita esconder :. muestra
 //botón en página de inicio que lleva a la página de términos y condiciones
 const botonUno = document.getElementById('terminos');
-    botonUno.addEventListener('click',botonA);
-    function botonA(){
-    welcome.classList.add("hideElement");
-    condiciones.classList.remove("hideElement");
-    }
+botonUno.addEventListener('click', botonA);
 
-    //botón en página de términos que lleva a página de inicio    
+function botonA() {
+  welcome.classList.add("hideElement");
+  condiciones.classList.remove("hideElement");
+}
+
+//botón en página de términos que lleva a página de inicio    
 const botonDos = document.getElementById('condiciones');
-    botonDos.addEventListener('click',botonB);
-    function botonB(){
-    condiciones.classList.add("hideElement");
-    welcome.classList.remove("hideElement");
-    }
+botonDos.addEventListener('click', botonB);
 
-    //botón en página de inicio que lleva a la página de registro
+function botonB() {
+  condiciones.classList.add("hideElement");
+  welcome.classList.remove("hideElement");
+}
+
+//botón en página de inicio que lleva a la página de registro
 const botonTres = document.getElementById('regresar1')
-    botonTres.addEventListener('click',botonC)
-    function botonC(){
-    welcome.classList.add("hideElement");
-    condiciones.classList.remove("hideElement");
-    }
+botonTres.addEventListener('click', botonC)
+
+function botonC() {
+  welcome.classList.add("hideElement");
+  condiciones.classList.remove("hideElement");
+}
 
 //botón en página de registro que lleva página de inicio
 const botonCuatro = document.getElementById('registro');
-    botonCuatro.addEventListener('click',botonD);
-    function botonD(){
-    welcome.classList.add("hideElement");
-    registrarse.classList.remove("hideElement"); 
-    }
+botonCuatro.addEventListener('click', botonD);
+
+function botonD() {
+  welcome.classList.add("hideElement");
+  registrarse.classList.remove("hideElement");
+}
 
 //botón en página de registro que lleva a la página donde está el formulario/cifrado
-    const botonCinco = document.getElementById('regresar2');
-    botonCinco.addEventListener('click',botonE);
-    function botonE(){
-    welcome.classList.remove("hideElement");
-    condiciones.classList.add("hideElement");
-    registrarse.classList.add("hideElement");
-    }
+const botonCinco = document.getElementById('regresar2');
+botonCinco.addEventListener('click', botonE);
+
+function botonE() {
+  welcome.classList.remove("hideElement");
+  condiciones.classList.add("hideElement");
+  registrarse.classList.add("hideElement");
+}
 
 //botón en página del formulario/cifrado que lleva a página final
 const botonSeis = document.getElementById('enviar1');
-    botonSeis.addEventListener('click', botonF);
-    function botonF(){
-    registrarse.classList.add("hideElement");
-    final.classList.remove("hideElement");    
-    }
-    
+botonSeis.addEventListener('click', botonF);
+
+function botonF() {
+  registrarse.classList.add("hideElement");
+  final.classList.remove("hideElement");
+}
+
 //botón en página final que lleve a página de inicio
 const botonSiete = document.getElementById('terminar1');
-    botonSiete.addEventListener('click', botonG);
-    function botonG(){
-    final.classList.add("hideElement");
-    welcome.classList.remove("hideElement");
-    }
+botonSiete.addEventListener('click', botonG);
 
+function botonG() {
+  final.classList.add("hideElement");
+  welcome.classList.remove("hideElement");
+}
 
+//caja de texto a cifrar
+    const textEncode = document.getElementById('inputEncode').value;
+    const textDecode = document.getElementById('inputDecode').value;
+    const botonCifrar = document.getElementById('encode');
+    const botonDescifrar = document.getElementById('decode');
 
+    
+    botonCifrar.addEventListener('click', ()=>{
+        let msj1 = textEncode.value;
+        window.cipher.encode(msj, message1);
+    })
+    
+    botonDesifrar.addEventListener('click', ()=>{
+        let msj2 = textDecode.value;
+        window.cipher.decode(mensaje, message2);
+    })

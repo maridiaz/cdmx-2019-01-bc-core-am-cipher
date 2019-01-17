@@ -9,7 +9,8 @@
     <div id="root">
   <section>
       <div id="welcome">
-      <h1>¡Hola, bienvenida/o al portal de Becas UNAM!</h1>
+      <h1 id="first">Universidad Nacional Autónoma de México</h1>
+      <h3>¡Hola, bienvenida/o al portal de Becas UNAM!</h3>
     <p>Aquí encontrarás información sobre las becas para movilidad académica y estudiantil</p>
     <p>Revisa los términos y condiciones, ¡no dudes en registrarte para solicitar tu beca!</p>
     <br>
@@ -21,8 +22,8 @@
     <!--Términos y condiciones-->
     <section>
     <div id="condiciones" class='hideElement'>
-      <h4>Requisitos básicos para solicitar beca</h4>
-     <ul>
+      <h2 id=second>Requisitos básicos para solicitar beca</h4>
+     <ul id=lista>
       <li>Ser alumno regular y estar inscrito en cualquier licenciatura de la UNAM.</li>
       <li>Tener promedio mínimo de 8.5.</li>
       <li>Contar con el 45% de créditos.</li>
@@ -34,34 +35,59 @@
       <button id="regresar1">Regresar</button>  
     </div>
     </section>
+
       <!--Iniciar registro-->
     <section>
       <div id="registrarse" class='hideElement'>
-      <h1>Ingresa tus datos</h1>
+      <h2 id=third>Ingresa tus datos</h1>
       <form>
-        Nombre: <input type = "text" name = "nombre" /><br>
+        Nombre completo: <input type = "text" name = "nombre" /><br>
         <br>
         Número de cuenta: <input type = "text" name = "cuenta" /><br>
         <br>
         Correo electrónico: <input type = "text" name = "email" /><br>
         <br>
+        <br>
       </form>
 
        <!--Código César-->
       <h3>Para finalizar, por favor elige un desplazamiento indicando cuántas posiciones quieres que el cifrado desplace cada caracter</h3>
-      Cifrar código: <input type = "text" name = "cifrado" /><br>
-        <br>
-      Descifrar código: <input type = "text" name = "descifrado" /><br>
-      <br>
+      Cifrar código: <input type = "text" id = "inputEncode" />
+      
+      <select id="cifrado2">
+          <option value='answer1'>1</option>
+          <option value='answer2'>2</option>
+          <option value='answer2'>3</option>
+      </select>
+      <button class=button id= "encode">Cifrar</button>  
+         <br> 
+         <br>
+  <p> Tu código cifrado es <span id = "message1"></span></p>  
+         <br>
+         <br>
+      Descifrar código: <input type = "text" id = "inputDecode" />
+      <select id="descifrado2">
+        <option value='answer3'>1</option>
+        <option value='answer4'>2</option>
+        <option value='answer2'>3</option>
+    </select>
+    <button class=button id= "decode">Descifrar</button>
+    <br>
+    <br>
+  <p class = "mensajeCifrado2"> Tu código descifrado es <span id = "message2"></span></p>
+    <br>
+    <br>
+    <br>
       <button id="regresar2">Regresar</button>
       <button id="enviar1">Enviar</button>
         </div>
         </section>     
           <br>
+
        <!--Última página-->
     <section>
     <div id="final" class='hideElement'>
-     <h2>¡Gracias! Tu registro ha sido exitoso</h2>
+     <h3>¡Gracias! Tu registro ha sido exitoso</h2>
       <br>
       <button id="terminar1">Finalizar</button>
       </div>
