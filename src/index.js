@@ -13,9 +13,12 @@ function botonA() {
 
 //botón en página de términos que lleva a página de inicio    
 const botonDos = document.getElementById('condiciones');
+const condiciones = document.getElementById("condiciones");
 botonDos.addEventListener('click', botonB);
 
 function botonB() {
+  const condiciones = document.getElementById("condiciones");
+  const welcome = document.getElementById("welcome");
   condiciones.classList.add("hideElement");
   welcome.classList.remove("hideElement");
 }
@@ -25,6 +28,7 @@ const botonTres = document.getElementById('regresar1')
 botonTres.addEventListener('click', botonC)
 
 function botonC() {
+  const welcome = document.getElementById("welcome");
   welcome.classList.add("hideElement");
   condiciones.classList.remove("hideElement");
 }
@@ -34,6 +38,8 @@ const botonCuatro = document.getElementById('registro');
 botonCuatro.addEventListener('click', botonD);
 
 function botonD() {
+  const welcome = document.getElementById("welcome");
+  const registrarse = document.getElementById("registrarse");
   welcome.classList.add("hideElement");
   registrarse.classList.remove("hideElement");
 }
@@ -43,6 +49,8 @@ const botonCinco = document.getElementById('regresar2');
 botonCinco.addEventListener('click', botonE);
 
 function botonE() {
+  const welcome = document.getElementById("welcome");
+  const registrarse = document.getElementById("registrarse");
   welcome.classList.remove("hideElement");
   condiciones.classList.add("hideElement");
   registrarse.classList.add("hideElement");
@@ -53,6 +61,8 @@ const botonSeis = document.getElementById('enviar1');
 botonSeis.addEventListener('click', botonF);
 
 function botonF() {
+  const registrarse = document.getElementById("registrarse");
+  const final = document.getElementById("final");
   registrarse.classList.add("hideElement");
   final.classList.remove("hideElement");
 }
@@ -62,6 +72,8 @@ const botonSiete = document.getElementById('terminar1');
 botonSiete.addEventListener('click', botonG);
 
 function botonG() {
+  const welcome = document.getElementById("welcome");
+  const final = document.getElementById("final");
   final.classList.add("hideElement");
   welcome.classList.remove("hideElement");
 }
