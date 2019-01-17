@@ -71,18 +71,30 @@ const inputEncode = document.getElementById('inputEncode');
 const inputDecode = document.getElementById('inputDecode');
 const botonCifrar = document.getElementById('encode');
 const botonDescifrar = document.getElementById('decode');
+const listaUno = document.getElementById('cifrado2');
+const listDos = document.getElementById('descifrado2');
 
-botonCifrar.addEventListener('click', () => {
-  let mssg1 = inputEncode.value;
-  const textoCifrado = window.cipher.encode(mssg1, 0);
-  document.getElementById('message1').innerHTML = textoCifrado;
+//botonCifrar.addEventListener('click', () => {
+  //let mssg1 = inputEncode.value;
+  //const textoCifrado = window.cipher.encode(mssg1, 0);
+  //document.getElementById('message1').innerHTML = textoCifrado;
+  //console.log(textoCifrado);
 
-});
+//});
 
-botonDescifrar.addEventListener('click', () => {
-  let mssg2 = inputDecode.value;
-  const textoDescifrado = window.cipher.decode(mssg2, 0);
-  document.getElementById('message2').innerHTML = textoDescifrado;
+//botonDescifrar.addEventListener('click', () => {
+  //let mssg2 = inputDecode.value;
+  //const textoDescifrado = window.cipher.decode(mssg2, 0);
+  //document.getElementById('message2').innerHTML = textoDescifrado;
+  //console.log(textoDescifrado);
   
-});
+//});
+
+botonCifrar.addEventListener('click',()=>{
+  let offset = parseInt(listaUno.value);
+  let string = inputEncode.value;
+  document.getElementById('message1').innerHTML=window.cipher.encode(string, offset);
+
+})
+
     

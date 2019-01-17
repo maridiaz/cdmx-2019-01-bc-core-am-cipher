@@ -9,6 +9,7 @@
 
 <body>
   <div id="root">
+    <!--Página de bienvenida-->
     <section>
       <div id="welcome">
         <h1 id="first">Universidad Nacional Autónoma de México</h1>
@@ -62,11 +63,8 @@
           <!--Aquí va el input que recibe el texto a cifrar--> 
           Cifrar código: <input type="text" id="inputEncode" />
 
-          <select id="cifrado2">
-            <option value='answer1'>1</option>
-            <option value='answer2'>2</option>
-            <option value='answer2'>3</option>
-          </select>
+          <input type=number id="cifrado2"
+          min="1" max="10">
           <button class=button id="encode">Cifrar</button>
           <br>
           <br>
@@ -76,11 +74,8 @@
 
           <!--Aquí va el input que recibe el texto a descifrar--> 
           Descifrar código: <input type="text" id="inputDecode" />
-          <select id="descifrado2">
-            <option value='answer3'>1</option>
-            <option value='answer4'>2</option>
-            <option value='answer2'>3</option>
-          </select>
+          <input type=number id="descifrado2"
+          min="1" max="10">
           <button class=button id="decode">Descifrar</button>
           <br>
           <br>
