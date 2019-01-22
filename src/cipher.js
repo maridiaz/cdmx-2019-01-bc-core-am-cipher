@@ -28,14 +28,27 @@ window.cipher = {
   //DESCIFRADO 
   decode: (offset, string) => {
     let resultado = "";
-    let mayus = string.toUpperCase();
-    for (let i = 0; i < mayus.length; i++) {
-      let ascii = mayus.charCodeAt(i);
-      //Aquí se inserta la fórmula
-      let formula = (ascii + 65 - offset) % 26 + 65;
+    
+    for (let i = 0; i < string.length; i++) {
+      let mensaje = string.charCodeAt(i);
+  //Aquí se inserta if y else if para la fórmula
 
-      let resultadoDos = String.fromCharCode(formula);
-      resultado += resultadoDos;
+      if (mensaje >= 65 && mensaje <= 90){
+        let formula = (mensaje + 65 - offset) % 26 + 65;
+        let resultadoDos = String.fromCharCode(formula);
+        resultado += resultadoDos;
+      }
+      else if (mensaje >= 97 && mensaje <= 122) {
+        let minusculas = (mensaje - 122 - offset) % 26 + 122;
+        let resultadoDos = String.fromCharCode(minusculas);
+        resultado += resultadoDos;
+      }
+      else {
+        let resultadoDos = String.fromCharCode(mensaje);
+        resultado += resultadoDos;
+        
+      }
+      
     }
     return resultado;
 
