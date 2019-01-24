@@ -37,13 +37,37 @@ Al ingresar a la página web, el usuario podrá encontrar la información necesa
 
 La página web es fácil de usar, hay pocos clicks que llevan de una página a otra (cuatro en total: inicio, requisitos, registro y final), la interacción hace que se entienda la lógica para realizar el registro de forma exitosa. En cuanto al diseño, es "simple": respeta el aspecto institucional que brinda la UNAM y hay información concisa. 
 
-## Tecnologías usadas
-
-La aplicación web está estructurada utilizando html, javascript, css y test con mocha. 
-
-## Descarga, instalación y ejecición de producto 
+## Descarga, instalación y ejecución de producto 
 
 Es una aplicación web, se accede por medio del link: https://maridiaz.github.io/cdmx-2019-01-bc-core-am-cipher/src 
+
+##Pre-requistos
+* Interfaz de usuario (UI)
+La interfaz debe permitir al usuario:
+
+  - Elegir un desplazamiento (offset) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
+  - Insertar un mensaje (texto) que queremos cifrar.
+  - Ver el resultado del mensaje cifrado.
+  - Insertar un mensaje (texto) a descifrar.
+  - Ver el resultado del mensaje descifrado.
+
+### Tecnologías usadas
+
+La aplicación web está estructurada utilizando:
+  - Un editor de texto (Visual Code), HTML, JavaScript, CSS.
+  - GitHub, Git Bash y Node.js (incluye npm).
+  - El framework Mocha. 
+
+### Scripts / Archivos
+  - README.md: debe explicar cómo descargar, instalar y ejecutar la aplicación así como una introducción a la aplicación, su funcionalidad y decisiones de diseño que tomaron.
+  - src/index.html: este es el punto de entrada a tu aplicación. Este archivo debe contener tu markup (HTML) e incluir el CSS y JavaScript necesario.
+  - src/cipher.js: acá debes implementar el objeto cipher, el cual debe estar exportado en el objeto global (window). Este objeto (cipher) debe contener dos métodos:
+  - cipher.encode(offset, string): offset es el número de posiciones que queremos mover a la derecha en el alfabeto y string el mensaje (texto) que queremos cifrar.
+  - cipher.decode(offset, string): offset es el número de posiciones que queremos mover a la izquierda en el alfabeto y string el mensaje (texto) que queremos descifrar.
+  - src/index.js: acá debes escuchar eventos del DOM, invocar cipher.encode() o cipher.decode() según sea necesario y actualizar el resultado en la UI.
+  - test/cipher.spec.js: este archivo contiene algunos tests de ejemplo y acá tendrás que implementar los tests(pruebas ) para cipher.encode() y cipher.decode().
+  - test realizado en Visual Code, abriendo la terminal y escribiendo "npm run test" para verificar todo el código o sólo escribir "npm run test-node" para hacer prueba en el cipher.
+
 
 ## Agradecimientos
 
