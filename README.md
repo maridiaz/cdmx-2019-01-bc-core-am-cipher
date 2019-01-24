@@ -39,8 +39,13 @@ La página web es fácil de usar, hay pocos clicks que llevan de una página a o
 
 ## Tecnologías usadas
 
-La aplicación web está estructurada utilizando html,javascript y css.
+La aplicación web está estructurada utilizando html, javascript, css y test con mocha. 
 
-## Descarga, instalación y ejecición de producto
+## Descarga, instalación y ejecición de producto 
 
-Es una aplicación web, se accede por medio del link: https://maridiaz.github.io/cdmx-2019-01-bc-core-am-cipher/src
+Es una aplicación web, se accede por medio del link: https://maridiaz.github.io/cdmx-2019-01-bc-core-am-cipher/src 
+
+## Agradecimientos
+
+A John, Lizzie y Silvana: por las office hours, resolver dudas y su paciencia :)
+Al seis squad, por el trabajo en equipo logrado.

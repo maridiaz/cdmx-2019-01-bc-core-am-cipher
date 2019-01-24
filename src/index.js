@@ -58,23 +58,23 @@ botonSiete.addEventListener("click", () => {
 
 //caja de texto a cifrar y caja descifrar
 //el nombre de los id están en HTML, no regresa lo que se ingresa en input
-const inputEncode = document.getElementById('inputEncode');
-const inputDecode = document.getElementById('inputDecode');
-const botonCifrar = document.getElementById('encode');
-const botonDescifrar = document.getElementById('decode');
-const listaUno = document.getElementById('cifrado2');
-const listaDos = document.getElementById('descifrado2');
+const inputEncode = document.getElementById("inputEncode");
+const inputDecode = document.getElementById("inputDecode");
+const botonCifrar = document.getElementById("encode");
+const botonDescifrar = document.getElementById("decode");
+const listaUno = document.getElementById("cifrado2");
+const listaDos = document.getElementById("descifrado2");
 
 //boton cifrar
-botonCifrar.addEventListener('click', () => {
+botonCifrar.addEventListener("click", () => {
   let offset = parseInt(listaUno.value);
   let string = inputEncode.value;
-  document.getElementById('message1').innerHTML = window.cipher.encode(offset, string);
+  document.getElementById("message1").innerHTML = window.cipher.encode(offset, string);
 })
 
 //boton descifrar
-botonDescifrar.addEventListener('click', () => {
+botonDescifrar.addEventListener("click", () => {
   let offset = parseInt(listaDos.value);
   let string = inputDecode.value;
-  document.getElementById('message2').innerHTML = window.cipher.decode(offset, string);
+  document.getElementById("message2").innerHTML = window.cipher.decode(offset, string);
 })
