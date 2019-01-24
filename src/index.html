@@ -12,8 +12,10 @@
     <!--Página de bienvenida-->
     <section>
       <div id="welcome">
-        <h1>Universidad Nacional Autónoma de México</h1>
-
+        <header>
+          <h1>Universidad Nacional Autónoma de México</h1>
+        </header>
+        
         <h3>¡Hola, bienvenida/o al portal de Becas UNAM!</h3>
         <p>Aquí encontrarás información sobre las becas para movilidad académica y estudiantil</p>
         <p>Revisa los términos y condiciones, ¡no dudes en registrarte para solicitar tu beca!</p>
@@ -22,82 +24,90 @@
         <button id="registro">Iniciar registro</button>
       </div>
     </section>
-</div>
-    <!--Términos y condiciones-->
-    <section>
-      <div id="condiciones" class="hideElement">
-        <h2>Requisitos básicos para solicitar beca</h2>
-          <ul id="lista">
-            <li>Ser alumno regular y estar inscrito en cualquier licenciatura de la UNAM.</li>
-            <li>Tener promedio mínimo de 8.5.</li>
-            <li>Contar con el 45% de créditos.</li>
-            <li>Si se tiene el dominio de un idioma, certificación del mismo de acuerdo al Marco Común Europeo de
-              Referencia de las Lenguas.</li>
-            <li>Cumplir con los requisitos internos de tu Escuela o Facultad y de la universidad extranjera de tu
-              elección.</li>
-          </ul>
-          <br>
-          <br>
-          <button id="regresar1">Regresar</button>
-      </div>
-    </section>
+  </div>
+  <!--Términos y condiciones-->
+  <section>
+    <div id="condiciones" class="hideElement">
+      <h2>Requisitos básicos para solicitar beca</h2>
+      <ul id="lista">
+        <li>Ser alumno regular y estar inscrito en cualquier licenciatura de la UNAM.</li>
+        <li>Tener promedio mínimo de 8.5.</li>
+        <li>Contar con el 45% de créditos.</li>
+        <li>Si se tiene el dominio de un idioma, certificación del mismo de acuerdo al Marco Común Europeo de
+          Referencia de las Lenguas.</li>
+        <li>Cumplir con los requisitos internos de tu Escuela o Facultad y de la universidad extranjera de tu
+          elección.</li>
+      </ul>
+      <br>
+      <br>
+      <button id="regresar1">Regresar</button>
+    </div>
+  </section>
 
-    <!--Iniciar registro-->
-    <section>
-      <div id="registrarse" class="hideElement">
-        <h2>Ingresa tus datos</h2>
-          <form>
-            Nombre completo: <input type="text" name="nombre" /><br>
-            <br>
-            Número de cuenta: <input type="text" name="cuenta" /><br>
-            <br>
-            Correo electrónico: <input type="text" name="email" /><br>
-            <br>
-            <br>
-          </form>
-
-          <!--Código César-->
-          <h3>Para finalizar, por favor elige un desplazamiento indicando cuántas posiciones quieres que el cifrado
-            desplace cada caracter</h3>
-          
-          <!--Aquí va el input que recibe el texto a cifrar--> 
-          Cifrar código: <input type="text" id="inputEncode" />
-
-          <input type="number" id="cifrado2" min="1" max="50">
-          <button class="button" id="encode">Cifrar</button>
-          <br>
-          <p id="message1"> Tu código cifrado es </p>
-          <br>
-          <br>
-
-          <!--Aquí va el input que recibe el texto a descifrar--> 
-          Descifrar código: <input type="text" id="inputDecode" />
-          <input type="number" id="descifrado2" min="1" max="50">
-          <button class="button" id="decode">Descifrar</button>
-          <br>
-          <p id="message2"> Tu código descifrado es </p>
-          <br>
-          <br>
-          <br>
-          <button id="regresar2">Regresar</button>
-          <button id="enviar1">Enviar</button>
-      </div>
-    </section>
-    <br>
-
-    <!--Última página, regresa a inicio-->
-    <section>
-      <div id="final" class="hideElement">
-        <h3>¡Gracias! Tu registro ha sido exitoso</h3>
-        <p>En breve recibirás un correo de confirmación</p>
-        <p>Si no encuentras el correo en bandeja de entrada, revisa en bandeja de mensajes no deseados</p>
+  <!--Iniciar registro-->
+  <section>
+    <div id="registrarse" class="hideElement">
+      <h2>Ingresa tus datos</h2>
+      <form>
+        Nombre completo: <input type="text" name="nombre" /><br>
         <br>
-          <br>
-          <button id="terminar1">Finalizar</button>
-      </div>
-    </section>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+        Número de cuenta: <input type="text" name="cuenta" /><br>
+        <br>
+        Correo electrónico: <input type="text" name="email" /><br>
+        <br>
+        <br>
+      </form>
+
+      <!--Código César-->
+      <h3>Para finalizar, por favor elige un desplazamiento indicando cuántas posiciones quieres que el cifrado
+        desplace cada caracter</h3>
+
+      <!--Aquí va el input que recibe el texto a cifrar-->
+      Cifrar código: <input type="text" id="inputEncode" />
+
+      <input type="number" id="cifrado2" min="1" max="50">
+      <button class="button" id="encode">Cifrar</button>
+      <br>
+      <p id="message1"> Tu código cifrado es </p>
+      <br>
+      <br>
+
+      <!--Aquí va el input que recibe el texto a descifrar-->
+      Descifrar código: <input type="text" id="inputDecode" />
+      <input type="number" id="descifrado2" min="1" max="50">
+      <button class="button" id="decode">Descifrar</button>
+      <br>
+      <p id="message2"> Tu código descifrado es </p>
+      <br>
+      <br>
+      <br>
+      <button id="regresar2">Regresar</button>
+      <button id="enviar1">Enviar</button>
+    </div>
+  </section>
+  <br>
+
+  <!--Última página, regresa a inicio-->
+  <section>
+    <div id="final" class="hideElement">
+      <h3>¡Gracias! Tu registro ha sido exitoso</h3>
+      <p>En breve recibirás un correo de confirmación</p>
+      <p>Si no encuentras el correo en bandeja de entrada, revisa en bandeja de mensajes no deseados</p>
+      <br>
+      <br>
+      <button id="terminar1">Finalizar</button>
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="site-footer">
+    <div id="footer-content">
+      <p>Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2019.</p>
+    </div>
+  </footer>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

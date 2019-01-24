@@ -1,4 +1,4 @@
-## H2 Cifrado César - Portal de becas UNAM
+## Cifrado César - Portal de becas UNAM
 
 La Universidad Nacional Autónoma de México cuenta con una población compuesta por 330,000 personas aproximadamente. Por tal motivo, la Máxima Casa de Estudios ha creado distintas páginas web de acuerdo a las escuelas, Facultades, demandas y necesidades universitarias. Sin embargo, para solicitar una beca de movilidad -ya sea académica o estudiantil- no hay una página para ingresar de manera directa.
 
@@ -12,15 +12,15 @@ El trámite de movilidad en sí es largo y confuso; en consecuencia, quienes req
 
 Está dirigido a estudiantes y acádemicos -ambos sexos- que estén cursando estudios a nivel licenciatura o posgrado en alguna escuela/Facultad perteneciente a la UNAM. Asimismo, se encuentran en un rango socioeconómico medio-bajo.
 
-## H3 Resolución del problema
+## Resolución del problema
 
 El Portal de becas de movilidad UNAM se enfoca a tener un espacio exclusivo para brindar información sobre convocatorias y requisitos para solicitar becas a nivel licenciatura y posgrado. De esta manera, cuando una persona esté en proceso de documentación puede que el responsable de movilidad de su escuela/Facultad le indique las páginas a revisar y/o establecer un link en la página de la DGECI que direccione a la página de becas de movilidad.
 
-## H3 Objetivo de página 
+## Objetivo de página 
 
 Al ingresar a la página web, el usuario podrá encontrar la información necesaria de manera fácil, lo cual a su vez ayuda a agilizar el proceso de trámite de movilidad estudiantil.
 
-## H3 Contenido y características de la página 
+## Contenido y características de la página 
 
  - El Portal de Becas de movilidad UNAM es una aplicación web que se accede a través de un link.
  Página de bienvenida
@@ -33,13 +33,14 @@ Al ingresar a la página web, el usuario podrá encontrar la información necesa
    **A partir de la segunda visita a la página, no importa el uso de código a (cifrar/descrifrar).
  - Página de cierre, indica que el registro ha sido exitoso. Se puede regresar a página de inicio.
 
-## H3 Propuesta de diseño
+## Propuesta de diseño
 
-La página web es fácil de usar, hay pocos clicks que llevan de una página a otra (inicio, requisitos, registro y final), la interacción hace que se entienda la lógica para realizar el registro de forma exitosa. En cuanto al diseño, es "simple" respeta el aspecto institucional que brinda la UNAM y hay información concisa. 
+La página web es fácil de usar, hay pocos clicks que llevan de una página a otra (cuatro en total: inicio, requisitos, registro y final), la interacción hace que se entienda la lógica para realizar el registro de forma exitosa. En cuanto al diseño, es "simple": respeta el aspecto institucional que brinda la UNAM y hay información concisa. 
 
-## H3 Tecnologías usadas
+## Tecnologías usadas
+
 La aplicación web está estructurada utilizando html,javascript y css.
 
-## H3 Descarga, instalación y ejecición de producto
+## Descarga, instalación y ejecición de producto
 
-Es una aplicación web, se accede por medio del link: 
+Es una aplicación web, se accede por medio del link: https://maridiaz.github.io/cdmx-2019-01-bc-core-am-cipher/src
