@@ -71,8 +71,8 @@ La aplicación web está estructurada utilizando:
 
 ## Agradecimientos
 
-A John, Lizzie y Silvana: por las office hours, resolver dudas y su paciencia :)
-Al seis squad, por el trabajo en equipo logrado.
+- A John, Lizzie y Silvana: por las office hours, resolver dudas y su paciencia :)
+- Al seis squad, por el trabajo en equipo logrado.
 
 ## Modelo de negocio
 La página web está pensada para ser vendida a la UNAM para que sea una página más al repertorio de sitios que tiene, resaltando que esta página es específicamente para las becas de movilidad internacional. Por el contrario, podría venderse a la DGECI, que es la página especializada en los trámites y vinculación de movilidad.

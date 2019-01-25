@@ -45,6 +45,10 @@ li {
   line-height: 1.5;
 }
 
+#final {
+  padding-top: 8%;
+}
+
 button {
   border: none;
   color: black;
