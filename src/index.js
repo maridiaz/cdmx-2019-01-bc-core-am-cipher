@@ -12,6 +12,9 @@ const botonSeis = document.getElementById("enviar1");
 const botonSiete = document.getElementById("terminar1");
 const welcome = document.getElementById("welcome");
 const condiciones = document.getElementById("condiciones");
+const registrarse = document.getElementById("registrarse");
+const final = document.getElementById("final");
+
 
 //botón en página de inicio que lleva a la página de términos y condiciones
 botonUno.addEventListener("click", () => {
@@ -21,39 +24,39 @@ botonUno.addEventListener("click", () => {
 
 //botón en página de términos que lleva a página de inicio         
 botonDos.addEventListener("click", () => {
-  condiciones.classList.add("hideElement");
-  welcome.classList.remove("hideElement");
+  condiciones.classList.add("hide");
+  welcome.classList.remove("hide");
 });
 
 //botón en página de inicio que lleva a la página de registro
 botonTres.addEventListener("click", () => {
-  welcome.classList.add("hideElement");
-  condiciones.classList.remove("hideElement");
+  welcome.classList.add("hide");
+  condiciones.classList.remove("hide");
 });
 
 //botón en página de registro que lleva página de inicio
 botonCuatro.addEventListener("click", () => {
-  welcome.classList.add("hideElement");
-  registrarse.classList.remove("hideElement");
+  welcome.classList.add("hide");
+  registrarse.classList.remove("hide");
 });
 
 //botón en página de registro que lleva a la página donde está el formulario/cifrado 
-botonCinco.addEventListener('click', () => {
-  welcome.classList.remove("hideElement");
-  condiciones.classList.add("hideElement");
-  registrarse.classList.add("hideElement");
+botonCinco.addEventListener("click", () => {
+  welcome.classList.remove("hide");
+  condiciones.classList.add("hide");
+  registrarse.classList.add("hide");
 });
 
 //botón en página del formulario/cifrado que lleva a página final   
-botonSeis.addEventListener('click', () => {
-  registrarse.classList.add("hideElement");
-  final.classList.remove("hideElement");
+botonSeis.addEventListener("click", () => {
+  registrarse.classList.add("hide");
+  final.classList.remove("hide");
 });
 
 //botón en página final que lleve a página de inicio
 botonSiete.addEventListener("click", () => {
-  final.classList.add("hideElement");
-  welcome.classList.remove("hideElement");
+  final.classList.add("hide");
+  welcome.classList.remove("hide");
 });
 
 //caja de texto a cifrar y caja descifrar
